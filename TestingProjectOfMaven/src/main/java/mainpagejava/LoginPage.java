@@ -5,14 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import tests.BaseTest;
 
-public class LoginPage extends BaseTest {
+
+public class LoginPage extends BaseClass {
 	
-	@FindBy(xpath="//*[text()='Username']//parent::div//parent::div//input")
+	@FindBy(name="username")
 	WebElement userName;
 	
-	@FindBy(xpath="//*[text()='Password']//parent::div//parent::div//input")
+	@FindBy(name="password")
 	WebElement passWord;
 
 	@FindBy(xpath = "//*[text()=' Login ']")
